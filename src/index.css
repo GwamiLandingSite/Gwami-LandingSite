@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face { 
   font-family: "Cyber";
   src: url("assets/Cyber.ttf"); 
@@ -73,7 +73,7 @@ hr {
   border-color: #00CC33;
   font-size:18px;
   box-shadow: 1px;
-  color: #DBDFEA;
+  color: #ffffff;
   border-radius: 13px;
 }
 
@@ -83,7 +83,7 @@ hr {
   font-size:18px;
   box-shadow: 1px;
   font-weight: bold;
-  color: #DBDFEA;
+  color: #ffffff;
   border-radius: 13px;
 }
 

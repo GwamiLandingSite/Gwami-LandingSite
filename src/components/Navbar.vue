@@ -15,9 +15,9 @@
 
         <div class="d-flex ms-auto justify-content-left">
 
-        <router-link v-if="isActivated && isNetworkSupported" to="/profile" class="navbar-text mx-4">Profile</router-link>
-        <router-link to="/about" class="navbar-text mx-4">About KNS</router-link>
-        <router-link to="/how" class="navbar-text mx-4">How it works</router-link>
+        <router-link v-if="isActivated && isNetworkSupported" to="/profile" class="navbar-text mx-4">PROFILE</router-link>
+        <router-link to="/about" class="navbar-text mx-4">ABOUT KNS</router-link>
+        <router-link to="/how" class="navbar-text mx-4">HOW IT WORKS</router-link>
         </div>
         
         <div class="d-flex ms-auto">
@@ -124,15 +124,30 @@ export default {
 .dropdown-item {
   cursor: pointer;
 }
+
+.dropdown-item:active {
+  cursor: pointer;
+  background:#a1a1a1;
+}
+
 .navbar-brand {
   /*font-family: 'Cyber', cursive;*/
 }
 .navbar-light .navbar-brand .navbar-text {
-  color: #232B2B;;
+  color: #4a4a4a;
 }
 
 .navbar-text {
+  letter-spacing: 2px;
+  font-size: 16px;
 }
+
+.navbar-text:hover {
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .navbar-light {
   background: #ffffff;
   border-radius: 0px 0px 13px 13px;
