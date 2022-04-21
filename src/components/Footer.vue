@@ -1,23 +1,15 @@
 <template>
   <div class="container-fluid text-center mt-3">
 
-    <a target="_blank" href="https://twitter.com/gwamilabs">Built by GwamiLabs</a>
+    <a target="_blank" href="https://www.klimadao.finance/">Built for KlimaDAO</a>
     
     <span> | </span>
 
-    <router-link v-if="isActivated && isNetworkSupported" to="/profile">Profile</router-link>
-    
-    <span v-if="isActivated && isNetworkSupported"> | </span>
+    <a target="_blank" href="https://twitter.com/gwamilabs">by GwamiLabs</a>
 
-    <router-link to="/about">About KNS</router-link>
-    
     <span> | </span>
 
-    <router-link to="/how">How it works</router-link>
-    
-    <span> | </span>
-
-    <a target="_blank" href="https://twitter.com/punkdomains">Powered by Punk Domains</a>
+    <a target="_blank" href="https://twitter.com/punkdomains">powered by Punk Domains</a>
     
   </div>
 
