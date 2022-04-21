@@ -1,6 +1,7 @@
 <template>
   <div class="container text-center">
     <h1 class="mt-5 headline">Mint Your .klima Domain!</h1>
+    <h2 class="mt-3 subtitle">Each domain mint is a climate positive transaction and comes with a percentage of retired offset carbon.</h2>
 
     <div class="d-flex justify-content-center domain-input-container mb-3">
       <div class="input-group domain-input input-group-lg">
@@ -376,6 +377,12 @@ export default {
   font-size: 50px;
 }
 
+.subtitle {
+  color: #a1a1a1;
+  padding-left:20%;
+  padding-right:20%;
+}
+
 .buy-button {
   margin-bottom: 50px;
   background: #00CC33;
@@ -442,6 +449,11 @@ export default {
 @media only screen and (max-width: 767px) {
   .domain-input {
     width: 100%;
+  }
+
+  .subtitle{
+    padding-left: 0%;
+    padding-right: 0%;
   }
   
 .buy-button {
