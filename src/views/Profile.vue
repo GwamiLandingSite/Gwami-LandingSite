@@ -207,15 +207,25 @@ export default {
   cursor: pointer
 }
 
+.modal {
+  border: 1px solid #00CC33;
+}
+
 .table {
   --bs-table-bg: transparent;
-  color: #DBDFEA;
+  color: #4a4a4a;
 }
 
 .table:hover {
   --bs-table-bg: transparent;
   /*--bs-table-hover-bg: #1D1E2C;*/
   --bs-table-hover-bg: transparent;
-  --bs-table-hover-color: none;
+  --bs-table-hover-color: #232b2b;
+}
+
+.span-link:hover {
+  font-weight: bold;
+  color: #232B2B;
+  text-decoration: underline;
 }
 </style>
