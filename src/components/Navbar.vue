@@ -5,13 +5,23 @@
         <img src="../assets/LOGO.png" alt="KlimaDAO Name Service" height="88" width="249" class="d-inline-block align-bottom navbar-img">
       </router-link>
 
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="d-flex ms-auto justify-content-left">
+
+        <router-link v-if="isActivated && isNetworkSupported" to="/profile" class="navbar-text mx-4">Profile</router-link>
+        <router-link to="/about" class="navbar-text mx-4">About KNS</router-link>
+        <router-link to="/how" class="navbar-text mx-4">How it works</router-link>
+        </div>
         
         <div class="d-flex ms-auto">
+
           <div v-if="isActivated" class="">
           
             <div class="btn-group mx-2">
@@ -64,7 +74,7 @@ export default {
 
   computed: {
     ...mapGetters("user", ["getUserShortAddress", "getUserSelectedName"]),
-    ...mapGetters("network", ["getNetworkName", "getSupportedNetworks", "getSupportedNetworkNames"]),
+    ...mapGetters("network", ["getNetworkName", "getSupportedNetworks", "getSupportedNetworkNames", "isNetworkSupported"]),
 
     getNameOrAddress() {
       if (this.getUserSelectedName) {
@@ -117,8 +127,11 @@ export default {
 .navbar-brand {
   /*font-family: 'Cyber', cursive;*/
 }
-.navbar-light .navbar-brand {
+.navbar-light .navbar-brand .navbar-text {
   color: #232B2B;;
+}
+
+.navbar-text {
 }
 .navbar-light {
   background: #ffffff;

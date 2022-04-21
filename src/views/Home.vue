@@ -20,7 +20,7 @@
     </div>
 
     <p>
-      <small @click="showRetMsg" class="ret-msg">Optional: Add short message for Klima Love Letters</small>
+      <small @click="showRetMsg" class="ret-msg">Optional: Add a short message for Klima Love Letters</small>
     </p>
     
     <div v-if="showRetMsgInput" class="d-flex justify-content-center">
