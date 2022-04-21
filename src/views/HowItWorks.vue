@@ -41,7 +41,7 @@
         <ul>
           <li>The holder's address (by default)</li>
           <li>Profile picture (an NFT that the user owns)</li>
-          <li>URL (like user's homepage or similar; this comes handy together with the Klima Domains browser plugin)</li>
+          <li>URL (like user's homepage or similar; this comes handy together with the KNS Domains browser plugin)</li>
           <li>Custom data such as a Twitter handle, description, etc.</li>
         </ul>
       </p>  
@@ -50,7 +50,6 @@
       </p>
       <h3>Auto Retiring Domain</h3>
       <img class="img-fluid mb-4" src="../assets/kns-contracts-schema.png" width="800" />
-      <p>For more info <router-link to="/about">click here</router-link>.</p>
 
 
 

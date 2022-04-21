@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @font-face { 
   font-family: "Cyber";
   src: url("assets/Cyber.ttf"); 
 }
 
 a {
-  color: #DBDFEA;
+  color: #4A4A4A;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #a1a1a1;
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(90deg, hsla(173, 100%, 25%, 1) 0%, hsla(120, 100%, 13%, 1) 100%);
-  color: #DBDFEA;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #232B2B;
 }
 
 p {
@@ -33,35 +33,99 @@ hr {
 
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
   background: transparent;
-  border-color: #DBDFEA;
+  border-color: #4A4A4A;
   box-shadow: none;
-  color: #DBDFEA;
+  color: #232B2B;
+  border-radius: 13px;
 }
 
 .btn-primary:hover {
-  color: black;
-  border-color: #ffffff;
-  background: #ffffff;
+  background: transparent;
+  border-color: #232B2B;
+  font-weight: bold;
+  box-shadow: none;
+  color: #232B2B;
+  border-radius: 13px;
+}
+
+
+.btn-Network, .btn-Network:active, .btn-Network:focus, .btn-Network:disabled {
+  background: transparent;
+  border-color: #00CC33;
+  font-size:18px;
+  box-shadow: none;
+  color: #4A4A4A;
+  border-radius: 13px;
+}
+
+.btn-Network:hover {
+  color: #4A4A4A;
+  font-size:18px;
+  font-weight: bold;
+  border-color: #00CC33;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 13px;
+}
+
+.btn-Domain, .btn-Domain:active, .btn-Domain:focus, .btn-Domain:disabled {
+  background: #00CC33;
+  border-color: #00CC33;
+  font-size:18px;
+  box-shadow: 1px;
+  color: #DBDFEA;
+  border-radius: 13px;
+}
+
+.btn-Domain:hover {
+  background: #00CC33;
+  border-color: #00CC33;
+  font-size:18px;
+  box-shadow: 1px;
+  font-weight: bold;
+  color: #DBDFEA;
+  border-radius: 13px;
+}
+
+.btn-Disconnected, .btn-Disconnected:active, .btn-Disconnected:focus, .btn-Disconnected:disabled {
+  background: #a1a1a1;
+  border-color: #00CC33;
+  font-size:18px;
+  box-shadow: none;
+  color: #ffffff;
+  border-radius: 13px;
+}
+
+.btn-Disconnected:hover {
+  background: #a1a1a1;
+  border-color: #00CC33;
+  font-size:18px;
+  font-weight: bold;
+  box-shadow: none;
+  color: #ffffff;
+  border-radius: 13px;
 }
 
 .btn-secondary, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:disabled {
-  background: white;
-  border-color: black;
+  background: transparent;
+  border-color: #4A4A4A;
   box-shadow: none;
-  color: black;
+  color: #232B2B;
 }
 
 .btn-secondary:hover {
-  color: black;
-  border-color: #ffffff;
-  background: #ffffff;
+  background: transparent;
+  border-color: #4A4A4A;
+  font-weight: bold;
+  box-shadow: none;
+  color: #232B2B;  background: #ffffff;
 }
 
 .container {
   background: transparent;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #DBDFEA;
+  border-radius: 13px;
+  border: 1px solid #00CC33;
 }
 
 .img-thumbnail {

@@ -1,8 +1,8 @@
 <template>
   <div class="container text-center">
-    <h1 class="mt-5">Mint Your .klima Domain!</h1>
+    <h1 class="mt-5 headline">Mint Your .klima Domain!</h1>
 
-    <div class="d-flex justify-content-center domain-input-container">
+    <div class="d-flex justify-content-center domain-input-container mb-3">
       <div class="input-group domain-input input-group-lg">
         <input
           v-model="chosenDomainName" 
@@ -72,10 +72,10 @@
     </button>
 
     <!-- Connect Wallet -->
-    <button v-if="!isActivated" class="btn btn-primary btn-lg mt-3 buy-button" @click="open">Connect wallet</button>
+    <button v-if="!isActivated" class="btn btn-primary btn-lg mt-3 btn-Disconnected" @click="open">Connect wallet</button>
 
-    <div v-if="isActivated && !isNetworkSupported" class="mt-4 buy-button">
-      <button class="btn btn-primary btn-lg" @click="changeNetwork('Polygon')">Switch to Polygon</button>
+    <div v-if="isActivated && !isNetworkSupported" class="mt-4">
+      <button class="btn btn-primary btn-lg btn-Disconnected" @click="changeNetwork('Polygon')">Switch to Polygon</button>
     </div>
     
   </div>
@@ -371,8 +371,47 @@ export default {
 </script>
 
 <style scoped>
+
+.headline {
+  font-size: 50px;
+}
+
 .buy-button {
   margin-bottom: 50px;
+  background: #00CC33;
+  color: #ffffff;
+  width:50%;
+}
+
+.buy-button:hover {
+  margin-bottom: 50px;
+  background: #00CC33;
+  border: 1px solid #4a4a4a;
+  color: #ffffff;
+  width:50%;
+}
+
+.btn-Disconnected, .btn-Disconnected:active, .btn-Disconnected:focus, .btn-Disconnected:disabled {
+  margin-bottom: 50px;
+  background: #a1a1a1;
+  border-color: #00CC33;
+  font-size:18px;
+  box-shadow: none;
+  color: #ffffff;
+  border-radius: 13px;
+  width:50%;
+}
+
+.btn-Disconnected:hover {
+  margin-bottom: 50px;
+  background: #a1a1a1;
+  border-color: #00CC33;
+  font-size:18px;
+  font-weight: bold;
+  box-shadow: none;
+  color: #ffffff;
+  border-radius: 13px;
+  width:50%;
 }
 
 .domain-input {
@@ -404,5 +443,22 @@ export default {
   .domain-input {
     width: 100%;
   }
+  
+.buy-button {
+  width:100%;
+}
+
+.buy-button:hover {
+  width:100%;
+}
+
+.btn-Disconnected, .btn-Disconnected:active, .btn-Disconnected:focus, .btn-Disconnected:disabled {
+  width:100%;
+}
+
+.btn-Disconnected:hover {
+  width:100%;
+}
+
 }
 </style>

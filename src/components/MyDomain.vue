@@ -60,7 +60,8 @@ export default {
 
 <style scoped>
 .text-click:hover {
-  color: white;
+  color: #232B2B;
+  font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
 }

@@ -54,10 +54,12 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
+  color: #232B2B;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #232B2B;
 }
 
 .container-fluid {
@@ -71,6 +73,7 @@ a:hover {
   margin-left: 15px;
   margin-right: 15px;
   font-size: 2em;
+  color: #232B2B;
 }
 
 .polygon {

@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
-    <div class="text-primary-600 text-9xl font-bold my-5">404</div>
-    <div class="text-2xl text-gray-500 my-5">Oops. Page not found...</div>
+    <div class="text-dark-500 text-9xl font-bold my-5">404</div>
+    <div class="text-2xl text-dark-500 my-5">Oops. Page not found...</div>
 
     <!--
     <p class="punchline">
@@ -21,11 +21,13 @@
   font-size: 4em;
   margin-top: 150px;
   margin-bottom: 50px;
+  color:#4a4a4a
 }
 
 .logo {
   font-family: 'Cyber', cursive;
   font-size: 2em;
+  color: #4a4a4a;
   /*margin-bottom: 150px;*/
 }
 </style>
