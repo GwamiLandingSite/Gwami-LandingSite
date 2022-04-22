@@ -29,10 +29,11 @@
             <h3>Chrome/Brave</h3>
 
             <p>
-              <small><em>Coming soon!</em></small>
+              <strong>Live!</strong>
             </p>
-
+            <a href="https://chrome.google.com/webstore/detail/punk-domains/mdcmgmmealkedhjjpapbgoiabnkgieem">
             <img class="img-fluid browser-img mb-3" src="../assets/chrome-logo.png" />
+            </a>
           </div>
         </div>
 
